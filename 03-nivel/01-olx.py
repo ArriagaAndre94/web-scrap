@@ -22,6 +22,21 @@ try:
 except:
     pass
 
+boton = driver.find_element(By.XPATH, '//button[@data-aut-id="btnLoadMore"]')
+
+for i in range(3): # Voy a darle click en cargar mas 3 veces
+    try:
+        # le doy click
+        boton.click()
+        # espero que cargue la informacion dinamica
+        sleep(20)
+        # busco el boton nuevamente para darle click en la siguiente iteracion
+        boton = driver.find_element(By.XPATH, '//button[@data-aut-id="btnLoadMore"]')
+    except Exception as e:
+        print(e)
+        # si hay algun error, rompo el lazo. No me complico.
+        break
+
 autos = driver.find_elements(By.XPATH, '//li[@data-aut-id="itemBox"]')
 
 for auto in autos:
