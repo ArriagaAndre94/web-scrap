@@ -1,0 +1,64 @@
+descripcion,id,pregunta
+"
+                I am trying to implement the basic entry/exist fade animation where the content shows either a loading animation or the value of the results.  These should fade in & out depending on the state of ...
+            ",[0],Why are multiple entry/exist animations with ternary logic not animating?
+"
+                I have a page with 10 questions and a comment field.  The questions' answers are selected via are radio buttons, the comment is a text field.  When I tr to get the POST data entered into my SQL data ...
+            ",[1],Cannot insert PSOT data in SQLlite3 db in Django - NOT NULL constraint failed error
+"
+                I'm currently trying to log data to the Windows Event Viewer, and I'm trying to achieve something like this using C:
+As you can see below, the General tab contains the main text of my log, and the ...
+            ",[2],How do I write XML to Windows Event Viewer in C?
+"
+                I have started working on a program to decode SAME Tones from an audio source save the header to a text file and record the message, but I have know idea how to approach decoding from an audio source.
+...
+            ",[3],Decoding SAME tones from an Audio Source
+"
+                I am trying to append line containing search string and the next line along with the file name. But it is only doing for the first occurrences and after that it searched fir the string but do not ...
+            ",[4],Perp script appending search line and next line along with file name
+"
+                What is the precondition of the algorithms std::lower_bound, std::upper_bound and std::equal_range?
+template <class FwIt, class T>
+FwIt             lower_bound(FwIt first, FwIt last, const T&...
+            ",[5],Partition a range with respect to a value
+"
+                I have a Rails application on cloud run with an endpoint called by our apps to determine if their version is current and if not, requires a download. This is a simple, one record read of the database ...
+            ",[6],Cloud run seems to timeout and generate HTTP 304 responses for application endpoints that don't check last modified headers or other etags
+"
+                i have configured react i18next with inertia and it works without SSR mode.
+react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+Error: Ziggy error: 'locale' ...
+            ",[7],How to use Inertia SSR with i18next to support localization
+"
+                I'm not understanding what I'm doing wrong in this implementation. So I'm logging in and passing the correct credentials for a user. After submitting the credentials it will call the server to ...
+            ",[8],Login User Data Persistent
+"
+                I would like to have a live camera feed from the Raspberry Pi 3B and send it to my mac via a direct ethernet connection between the two. The Raspberry Pi 3B also needs to be able to receive data from ...
+            ",[9],Using Socket python library with a direct ethernet connection between Raspberry Pi (3B) and Mac for a live video feed
+"
+                I having trouble with adding states' names into the graph. I refered to this plotly website for plotting. The last map in the this website which has text ""Africa"" on the graph,is what I want ...
+            ",[10],Add State Name in Choropleth Map
+"
+                PlaybackActiveTrackChanged event is emitted multiple times no matter what made current track to change. So, a more accurate TrackPlaybackFinshed event should be emitted.
+I get ...
+            ",[11],Emit TrackFinished event when playback of current track get finished
+"
+                Public Sub test()
+unique_Sort_multiple_columnstoSinglecol ""$D$5:$K$23"", ""A1""
+End Sub
+
+Public Sub unique_Sort_multiple_columnstoSinglecol(SourceRng As String, DestinationRng As ...
+            ",[12],unique sort A to Z multi columns to single column start form beginning of destination column
+"
+                I designed a custom class in TypeScript that contains a method:
+// @/utils/llm.ts
+export default class LLMUtils {
+   ...
+    async discussWithLLM(
+        history: ChatHistory,
+        question: ...
+            ",[13],Mocking TypeScript class with Vitest
+"
+                I am using the ""app"" router in NextJS and want to use Dynamic Routes in the context of dynamically creating pages for posts for a blog.
+I am having problems figuring out how to pass an ...
+            ",[14],How can I pass an Object to the page component when using Dynamic Routing in NextJS?
