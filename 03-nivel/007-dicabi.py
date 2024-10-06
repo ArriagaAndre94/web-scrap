@@ -5,6 +5,7 @@ from selenium import webdriver # pip install selenium
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import Select
 
 opts = Options()
 opts.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
@@ -17,6 +18,11 @@ driver.refresh()
 sleep(2)
 
 try:
+    filtro = driver.find_element(By.XPATH, '//select[@name="ctl00$ContentPlaceHolder1$ddlFiltro"]')
+    # filtro.send_keys('Nit igual a')
+    filtroSelect = Select(filtro)
+    filtroSelect.select_by_visible_text('Nit igual a')
+    # filtro.select_by_value('Nit igual a')
     textbox = driver.find_element(By.XPATH, '//input[@name="ctl00$ContentPlaceHolder1$txtDatoBuscar"]')
     textbox.clear()
     # textbox.send_keys('1796688380301')
@@ -27,9 +33,8 @@ try:
 
     driver.save_screenshot('/Users/andre/Desktop/screenshot.png')
     
-except:
-    pass
-
+except Exception as e:
+        print(e)
 
 import pytesseract
 from PIL import Image
@@ -63,3 +68,6 @@ with open("/Users/andre/workspace/web-scrap/03-nivel/output_text.txt", "w") as f
 #         print (descripcion)
 #     except Exception as e:
 #         print ('Anuncio carece de precio o descripcion')
+
+
+driver.close()
